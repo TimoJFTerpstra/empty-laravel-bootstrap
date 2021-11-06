@@ -1,0 +1,67 @@
+// bootstrap 5
+@import "./../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./../../node_modules/daterangepicker/daterangepicker";
+@import "./../../node_modules/select2/dist/css/select2.min";
+@import "./../../node_modules/datatables.net-bs5/css/dataTables.bootstrap5";
+
+// custom classes
+.bootstrap-table {
+    width: 100%;
+    // more custom styling
+
+    tr {
+
+        td, th {
+            padding: 10px 25px;
+            border-bottom: 1px solid $gray-400;
+        }
+
+        td:last-child, th:last-child {
+            text-align: end;
+        }
+    }
+
+    .even {
+        background-color: $gray-100;
+    }
+}
+
+.text-header {
+    color: $text-color-primary;
+}
+
+.icon-small {
+    width: 25px;
+    height: 25px;
+}
+
+.navbar.primary{
+    padding: 0;
+    background-color: $primary;
+
+    .nav-link {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        color: $text-color-primary !important;
+
+        &.active {
+            border-bottom: $text-color-primary solid 3px;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.image-preview {
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &.new {
+        width: 500px;
+    }
+}
