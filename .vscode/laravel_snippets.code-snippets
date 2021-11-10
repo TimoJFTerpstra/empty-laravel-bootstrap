@@ -92,6 +92,27 @@
         "description": "Insert component form input."
     },
 
+    "form upload image": {
+        "prefix": "form.upload.image",
+        "body": [
+            "<x-form.uploadimage",
+            "   :key=\"$$key='key'\"",
+            "   :label=\"$$label='text' \" />"
+        ],
+        "description": "Insert component form image upload."
+    },
+
+    "form color picker": {
+        "prefix": "form.color",
+        "body": [
+            "<x-form.color",
+            "   :key=\"$$key='key'\"",
+            "   :label=\"$$label='text' \"",
+            "   :value=\"$$value='#353535' \" />"
+        ],
+        "description": "Insert component form color picker."
+    },
+
     "setup table": {
         "prefix": "table.setup",
         "body": [

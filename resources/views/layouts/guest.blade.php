@@ -21,9 +21,10 @@
         <x-menu.guest />
         {{ $slot ?? '' }}
 
-        <x-form.uploadimage
-        :key="$key='photo'"
-        :source="$source='storage/resources/icons/edit.png' " />
+        <x-form.color
+           :key="$key='key'"
+           :label="$label='text' "
+           :value="$value='#353535' " />
 
     </body>
     @stack('scripts')
